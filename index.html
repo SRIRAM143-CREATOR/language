@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+    <html lang="en">
+   <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Language Selector</title>
+</head>
+<body>
+    <select id="lang-selector" onchange="handleChange()"> 
+        <option >English</option>
+        <option >Telugu</option>
+        <option >Urdu</option>
+        <option >Korea</option>
+    </select>
+
+    <p id="sriram">Hello welcome to Andhra pradesh</p>
+    <h1 id="raju">I love You Atmakur</h1>
+
+    <script type="text/javascript">
+        function handleChange() { 
+            
+             res = document.getElementById("lang-selector").value;
+           
+             result = document.getElementById("sriram");
+             sol = document.getElementById("raju");
+             if(res=="English"){
+                result.textContent="Hello welcome to Andhra pradesh"
+                sol.textContent="I love You Atmakur"
+
+             }
+             else if(res=="Telugu"){
+                result.textContent="హలో ఆంధ్ర ప్రదేశ్‌కు స్వాగతం";
+                sol.textContent="నేను మీరు అట్మకూర్ ను ప్రేమిస్తున్నాను"
+             }
+             else if(res=="Urdu"){
+                result.textContent="خوش آمدید آندھرا پردیش";
+                sol.textContent="میں تم سے پیار کرتا ہوں اٹماکور"
+             }
+             else{
+                result.textConten= "안드라 프라데시에 오신 것을 환영합니다"
+                sol.textContent= "나는 당신을 아트마쿠르 사랑합니다";
+             }
+
+
+        } 
+           
+    </script>
+</body>
+</html>
